@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="div-1">
+            
+                <h1>LOGO</h1>
+                <h3><svg id="barcode"></svg></h3>
+            <div class="div-2">
+                <table>
+                    <tr>
+                        <th>Date / Time</th>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <th>Origin</th>
+                        <td><input type="text" placeholder="Place .... "></td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td><input type="text" placeholder="City Name .... "></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="div-3">
+            <table>
+                <tr>
+                    <th>Shipper</th>
+                    <td><textarea placeholder="Name .... Phone Number"></textarea></td>
+                    <th>Consignee</th>
+                    <td><textarea placeholder="Name .... Phone Number"></textarea></td>
+                    
+                </tr>
+                <tr>
+                    <th>Pickup</th>
+                    <td><textarea placeholder="Address .... "></textarea></td>
+                    <th>Deliver</th>
+                    <td><textarea placeholder="Address .... "></textarea></td>
+                    <td><textarea id="sign" placeholder="Signature .... "></textarea></td>
+                </tr>
+            </table>   
+        </div>
+        <!-- MID SECTION -->
+        <section>
+            <h3>SHIPPER LOGO</h3> <svg id="barcode2"></svg> <h3>SOMETHING</h3>
+        </section>
+        <!-- SECOND TABLE -->
+         <div class="div-4">
+            <table id="tbl-4">
+                <tr>
+                    <th>Items</th>
+                    <td><textarea  placeholder="Items"></textarea></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div-5">
+            <table>
+                <tr>
+                    <th>Weight</th>
+                    <td><textarea  placeholder="Weight"></textarea></td>
+                    <th>Quantity</th>
+                    <td><textarea  placeholder="Quantity"></textarea></td>
+                    <th>Amount</th>
+                    <td><textarea  placeholder="Amount"></textarea></td>
+                    <td><svg id="barcode3"></svg></td>
+                </tr>
+                <tr>
+                    <td class="ls"><strong>Cash on Delivery</strong></td>
+                </tr>
+            </table>
+         </div>
+    </main>
+
+    <script>
+        JsBarcode("#barcode", "J A M E S B O N D 0 0 7");
+        JsBarcode("#barcode2", "A G E N T 4 7");
+        JsBarcode("#barcode3", " E V E R Y T H I N G I S C O N N E C T E D ");
+    </script>
+</body>
+</html>
